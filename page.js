@@ -330,7 +330,7 @@
     if (hashbang) {
       current = base + location.hash.replace('#!', '');
     } else {
-      current = location.pathname + location.search;
+      current = location.pathname + location.search + location.hash;
     }
 
     if (current === ctx.canonicalPath) return;
